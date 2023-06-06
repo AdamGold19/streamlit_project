@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import io
 
 web_apps = st.sidebar.selectbox("Select Web Apps",
-                                ("Exploratory Data Analysis", "Distributions"))
+                                ("Exploratory Data Analysis", "Hey Jose"))
 
 # 5 num sum function
 def calculate_five_number_summary(data):
@@ -104,8 +104,8 @@ if web_apps == "Exploratory Data Analysis":
       bar_xtitle = st.text_input('Set x-axis Title', catagorical_column)
       
       plt.bar(proportions.index, proportions.values, edgecolor = "black", color = choose_color, alpha = choose_opacity)
-      plt.xlabel(catagorical_column)
-      plt.ylabel(bar_xtitle)
+      plt.xlabel(bar_xtitle)
+      plt.ylabel("proportion")
       plt.title(bar_title)
       st.pyplot(plt)
       
@@ -117,3 +117,6 @@ if web_apps == "Exploratory Data Analysis":
             file_name="flower.png",
             mime="image/png"
         )
+
+if web_apps == "Hey Jose":
+  st.write('Jose! Hey.')
