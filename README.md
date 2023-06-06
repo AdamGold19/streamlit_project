@@ -1,0 +1,1 @@
+My application allows one to upload a csv file and easily create a customizable histogram for numerical values. One can also select catagorical variables and create a customizable bar plot. Lasty, you can choose to say hey to my TA Jose. 
